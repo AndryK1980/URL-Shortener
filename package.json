@@ -1,0 +1,27 @@
+{
+  "name": "restapiservis",
+  "version": "1.0.0",
+  "description": "RESTful apiServ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git + https://AndryK1980@bitbucket.org/AndryK1980/url-shortener.git"
+  },
+  "keywords": [
+    "RESTAPI"
+  ],
+  "author": "AndryK",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/AndryK1980/restapi#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.7"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7"
+  }
+}
