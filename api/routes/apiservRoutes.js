@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function (app) {
    var url = require('../controllers/urlController');
 
@@ -6,7 +7,7 @@ module.exports = function (app) {
   app.route('/urls')
     .post(url.create_a_url)
     .get(url.list_all_urls)
-
-  app.route('/urls/:short_url')
-    .get(url.redirect)
+/*
+  app.route('/urls/:url_code')
+    .get(url.redirect)*/
 };
