@@ -10,7 +10,7 @@ var UrlSchema = new Schema({//create UrlShema
         required: 'Url is empty'
     },
     url_code: String,
-    
+
     short_url: String
     
 });

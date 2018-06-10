@@ -25,8 +25,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-var Url = require('./api/models/urlModel'); //created model loading here
+
 var routes = require('./api/routes/apiservRoutes'); //importing route
+
 routes(app); //register the route
 
 
@@ -39,3 +40,5 @@ console.log('My api RESTful API server started on: ' + port);
 app.use(function(req, res) {
     res.status(404).send({url: req.originalUrl + ' not found'})
   });
+
+  var Url = require('./api/models/urlModel'); //created model loading here

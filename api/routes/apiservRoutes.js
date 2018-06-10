@@ -7,7 +7,7 @@ module.exports = function (app) {
   app.route('/urls')
     .post(url.create_a_url)
     .get(url.list_all_urls)
-/*
-  app.route('/urls/:url_code')
-    .get(url.redirect)*/
+
+  app.route('/:url_code')
+    .get(url.redirect)
 };
