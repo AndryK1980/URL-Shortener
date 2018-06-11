@@ -33,22 +33,31 @@ exports.create_a_url = async function (req, res) {
         }
     }
     else{
-        if (validUrl.isUri(url)) {
-            req.body.url_code = makeSortUrl(6);
-            req.body.short_url = host_url + "/" + req.body.url_code;
-            var new_url = new Url(req.body);
-            new_url.save(function (err, url) {
-                if (err) { res.send(err); }
-                    res.json(url);
-            });
-        }
-        else {
+        if (url) {
+            if (validUrl.isUri(url)) {
+                req.body.url_code = makeSortUrl(6);
+                req.body.short_url = host_url + "/" + req.body.url_code;
+                var new_url = new Url(req.body);
+                new_url.save(function (err, url) {
+                    if (err) { res.send(err); }
+                        res.json(url);
+                });
+            }
+            else {
+                return res
+                    .status(404)
+                    .json(
+                        {message: "Invalid Url"}
+                    );
+            };
+        } else {
             return res
-                .status(404)
-                .json(
-                    {message: "Invalid Url"}
-                );
-        };
+                    .status(404)
+                    .json(
+                        {message: "Insert your Url"}
+                    );
+        }
+        
     }
 };
 //list all users
