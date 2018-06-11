@@ -23,6 +23,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "mongoose": "^4.10.8",
+    "passport": "^0.4.0",
     "valid-url": "^1.0.9"
   }
 }
