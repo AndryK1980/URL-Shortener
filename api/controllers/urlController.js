@@ -6,7 +6,7 @@ var mongoose = require('mongoose'),
 //create url
 exports.create_a_url = async function (req, res) {
     //valid short_url
-    var host_url = "localhost:3000";
+    var host_url = "https://apiurlshort.herokuapp.com";
     var url = req.body.url;
     var userUrl=req.body.userShortUrl;
     var record = await Url.findOne({'url_code':userUrl});
