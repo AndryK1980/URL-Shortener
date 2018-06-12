@@ -31,7 +31,7 @@ var routes = require('./api/routes/apiservRoutes'); //importing route
 routes(app); //register the route
 
 
-port = process.env.PORT || 4000,//подключаемый порт
+port = process.env.PORT || 3000,//подключаемый порт
 app.listen(port);
 
 

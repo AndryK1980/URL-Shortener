@@ -6,13 +6,13 @@ var mongoose = require('mongoose'),
 //create url
 exports.create_a_url = async function (req, res) {
     //valid short_url
-    var host_url = "localhost:4000";
+    var host_url = "localhost:3000";
     var url = req.body.url;
     var userUrl=req.body.userShortUrl;
     var record = await Url.findOne({'url_code':userUrl});
     if (userUrl) {
         if (record!=null) {
-            res.status(404).json({message: "Invalid short Url"});
+            res.status(500).json({message: "Invalid short Url"});
         } else {
             if (validUrl.isUri(url)) {
                 req.body.url_code = userUrl;
