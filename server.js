@@ -6,7 +6,7 @@ bodyParser = require('body-parser');
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/url_shotener'); 
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/url_shotener'); 
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
