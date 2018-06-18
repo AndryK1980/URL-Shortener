@@ -6,7 +6,7 @@ This repository contains the Node.js API.
 
 ### Clone the repo
 
-$ git clone https://AndryK1980@bitbucket.org/AndryK1980/url-shortener.git
+$ git clone https://github.com/AndryK1980/URL-Shortener.git
 $ cd url-shortener
 
 ### Install dependencies

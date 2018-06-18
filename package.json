@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://AndryK1980@bitbucket.org/AndryK1980/url-shortener.git"
+    "url": "git+https://github.com/AndryK1980/URL-Shortener.git"
   },
   "keywords": [
     "RESTAPI"
   ],
   "author": "AndryK",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/AndryK1980/url-shortener#readme",
+  "homepage": "https://github.com/AndryK1980/URL-Shortener.git#readme",
   "devDependencies": {
     "nodemon": "^1.12.7"
   },
